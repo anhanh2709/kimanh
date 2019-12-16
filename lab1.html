@@ -50,6 +50,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a href="index.html" class="nav-link" style="font-size: 22px; margin-top: 0px">Home</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link" style="font-size: 22px; margin-top: 0px">About</a></li>
+                <li class="nav-item"><a href="result.html" class="nav-link" style="font-size: 22px">Result</a></li>
                 <li class="nav-item active"><a href="lab1.html" class="nav-link" style="font-size: 22px; margin-top: 0px">Exercises</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link" style="font-size: 22px; margin-top: 0px">Contact</a></li>
                 <li class="nav-item"><a href="https://hci2019group07.tk/" style="font-size: 22px; margin-top: 0px" class="nav-link" target="_blank">Group07</a></li>
@@ -80,7 +81,7 @@
                     <li role="presentation"><a href="lab2.html">Lab 2</a></li>
                     <li role="presentation"><a href="lab3.html">Lab 3</a></li>
                     <li role="presentation"><a href="lab4.html">Lab 4</a></li>
-                    <li role="presentation"><a href="lab5.html">Lab 5</a></li>
+
                 </ul>
             </div>
         </div>
@@ -302,6 +303,7 @@
     </div>
 </section>
 
+<a id="backtop"></a>
 <footer class="ftco-footer ftco-bg-dark ftco-section"style="height: 60px;padding-top: 20px;padding-bottom: 20px;">
     <div class="container" style="text-align: center">
         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -330,6 +332,24 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
+<script type='text/javascript'>
+    var btn = $('#backtop');
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+    });
+
+    btn.on('click', function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+
+</script>
 
 </body>
 </html>
